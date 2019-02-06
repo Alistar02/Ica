@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/Joaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="99dp"
+            android:text="Joaca!"
+            android:textSize="50sp" />
+
+        <ImageButton
+            android:id="@+id/piatra"
+            android:layout_width="139dp"
+            android:layout_height="127dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="173dp"
+            android:layout_marginEnd="195dp"
+            android:layout_marginRight="195dp"
+            android:layout_marginBottom="211dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/piatra" />
+
+        <ImageButton
+            android:id="@+id/hartie"
+            android:layout_width="164dp"
+            android:layout_height="178dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="219dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:maxWidth="120dp"
+            android:maxHeight="120dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/hartie" />
+
+        <ImageButton
+            android:id="@+id/foarfece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="115dp"
+            android:layout_marginBottom="58dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:maxWidth="130dp"
+            android:maxHeight="130dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/foarfece" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
