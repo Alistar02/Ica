@@ -15,27 +15,22 @@ public class Rezultat extends AppCompatActivity {
         setContentView(R.layout.activity_rezultat);
 
         ImageView jucator_output = (ImageView)findViewById(R.id.jucator_output) ;
-
         ImageView adversar_output = (ImageView)findViewById(R.id.adversar_output);
 
-                    Intent second_intent_text = getIntent();
+        Intent second_intent_text = getIntent();
 
-                     TextView text_output;
- 
-                     String mesaj = second_intent_text.getStringExtra("raspuns");
+        TextView text_output;
+        String mesaj = second_intent_text.getStringExtra("raspuns");
 
-                     text_output = (TextView)findViewById(R.id.output);
-
-                         text_output.setText(mesaj);
+        text_output = (TextView)findViewById(R.id.output);
+        text_output.setText(mesaj);
 
         Bundle extras_jucator = getIntent().getExtras();
 
-        Bitmap imagine_jucator = (Bitmap) extras_jucator.getParcelable("imagine");
+        Bitmap imagineJucator = (Bitmap) extras_jucator.getParcelable("imagine_jucator");
+        Bitmap imagineAdversar = (Bitmap) extras_jucator.getParcelable("imagine_adversar");
 
-        Bitmap imagine_adversar = (Bitmap) extras_jucator.getParcelable("imagine1");
-
-        jucator_output.setImageBitmap(imagine_jucator);
-        adversar_output.setImageBitmap(imagine_adversar);
-
+        jucator_output.setImageBitmap(imagineJucator);
+        adversar_output.setImageBitmap(imagineAdversar);
     }
 }
